@@ -92,6 +92,9 @@ import ThreadSection from './component/ThreadSection';
 import SampleSectionProduct from './component/SampleSectionProduct';
 import NewDropsSection from './component/NewDropSection';
 import StepIntoSpotlightSection from './component/StepIntoSpolightSection';
+import CustomerReviews from './component/CustomerReviews';
+import BrandAmbassador from './component/BrandAmbassador';
+import Footer from './component/Footer';
 
 
 
@@ -146,6 +149,9 @@ function App() {
       <ThreadSection />
       <NewDropsSection/>
       <StepIntoSpotlightSection/>
+      <CustomerReviews/>
+      <BrandAmbassador/>
+      <Footer/>
     </div>
   );
 }

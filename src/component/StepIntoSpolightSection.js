@@ -87,7 +87,10 @@ const StepIntoSpotlightSection = () => {
     console.log(`Selected size ${size} for product ${product.title}`);
   };
 
-  const animationVariants = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } };
+  const animationVariants = { 
+    hidden: { opacity: 0, y: 50 }, 
+    visible: { opacity: 1, y: 0 } 
+};
   const controls = useAnimation(); 
   const [ref, inView] = useInView();
    useEffect(() => { 

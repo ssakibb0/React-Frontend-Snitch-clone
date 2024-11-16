@@ -376,6 +376,15 @@ a {
 
 /* SideBar toggle active */
 
+.side_navBar .navbar_menu .navbar_list,
+.side_navBar .navbar_menu .LinkList,
+.side_navBar .navbar_menu .Link_content_inner,
+.side_navBar .navbar_menu .mobile_nav_list,
+.side_navBar .navbar_menu .mobile_nav_list_one {
+  text-align: left;
+}
+
+
 .side_bar_section_active {
   opacity: 1;
   visibility: visible;
@@ -569,6 +578,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   margin-top: 20px;
+  margin-bottom: 150px;
 }
 
 .Nav_social_icon .s_icon {
