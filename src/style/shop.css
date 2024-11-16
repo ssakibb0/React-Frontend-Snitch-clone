@@ -855,7 +855,7 @@
   /* background: #1b1941 url(../preloading.gif) no-repeat center; */
   z-index: 9999;
   position: fixed;
-  background: #ffffff url(../img/loading/shoploading.gif) no-repeat center;
+  /* background: #ffffff url(../img/loading/shoploading.gif) no-repeat center; */
   background-size: 15%;
 }
 

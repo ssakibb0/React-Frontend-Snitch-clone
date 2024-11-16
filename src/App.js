@@ -90,6 +90,10 @@ import CartSection from './component/CartSection';
 import SearchSection from './component/SearchSection';  // Corrected the typo
 import ThreadSection from './component/ThreadSection';
 import SampleSectionProduct from './component/SampleSectionProduct';
+import NewDropsSection from './component/NewDropSection';
+import StepIntoSpotlightSection from './component/StepIntoSpolightSection';
+
+
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // For sidebar open/close
@@ -120,6 +124,8 @@ function App() {
 
     window.addEventListener('scroll', handleScroll);
 
+    // Aos.init({ duration: 1000 });
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -138,6 +144,8 @@ function App() {
       {isSearchOpen && <SearchSection toggleSearch={toggleSearch} />}
       <SampleSectionProduct />
       <ThreadSection />
+      <NewDropsSection/>
+      <StepIntoSpotlightSection/>
     </div>
   );
 }
