@@ -69,6 +69,70 @@ a {
 
 
 
+/* for mobile view */
+/* General styles for header and bottom bar */
+
+/* General styles for header and search bar placement */
+/* General styles for header and search bar placement */
+
+/* Header section */
+.header_section {
+  position: relative;
+}
+
+/* Hide right-side nav in header for larger screens */
+.nav_link_site .link_icone {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  /* For mobile devices: Hide cart and wishlist icons */
+  .nav_link_site .link_icone.wislbag,
+  .nav_link_site .link_icone.shopping-bag {
+    display: none;
+  }
+
+  /* Mobile specific: Ensure the search icon is on the right */
+  .nav_flex_item .nav_link_site .link_icone {
+    order: 2;
+    margin-left: auto;
+  }
+
+  /* Hide the sticky bottom bar on large screens */
+  .sticky-bottom-nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 100;
+  }
+
+  .sticky-bottom-nav .sticky-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sticky-icons .link_icone {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .sticky-bottom-nav .link_icone {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  /* Hide the sticky bottom bar in larger screen sizes */
+  @media (min-width: 769px) {
+    .sticky-bottom-nav {
+      display: none;
+    }
+  }
+}
 
 
 /* practise  */
@@ -383,38 +447,6 @@ a {
 
 /* SideBar toggle active */
 /* Make sure the dropdown menus have visibility and proper positioning */
-/* Make sure the dropdown menus are initially hidden */
-.LinkList {
-  display: none; /* Hidden by default */
-  position: absolute;
-  left: 100%;  /* Position the dropdown to the right of the parent */
-  top: 0;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  z-index: 10; /* Make sure it's on top */
-}
-
-.LinkList_one {
-  display: none; /* Hidden by default */
-  position: absolute;
-  left: 100%; /* Position the dropdown to the right of the parent (Shirts) */
-  top: 0;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  z-index: 10; /* Make sure it's on top */
-}
-
-/* When the Shop dropdown is open, show the dropdown */
-.LinkList.active {
-  display: block; /* Show the dropdown */
-}
-
-/* When the Shirts dropdown is open, show the nested dropdown */
-.LinkList_one.active {
-  display: block; /* Show the nested dropdown */
-}
 
 
 /* practise */
