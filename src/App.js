@@ -95,6 +95,7 @@ import StepIntoSpotlightSection from './component/StepIntoSpolightSection';
 import CustomerReviews from './component/CustomerReviews';
 import BrandAmbassador from './component/BrandAmbassador';
 import Footer from './component/Footer';
+import CornerButton from './component/CornerButton';
 
 
 
@@ -152,6 +153,7 @@ function App() {
       <CustomerReviews/>
       <BrandAmbassador/>
       <Footer/>
+      <CornerButton/>
     </div>
   );
 }

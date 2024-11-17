@@ -65,6 +65,13 @@ a {
 /* }  */
 
 /* Header Section Style Start */
+/* Header Section */
+
+
+
+
+
+/* practise  */
 
 
 .top_header {
@@ -375,7 +382,42 @@ a {
 }
 
 /* SideBar toggle active */
+/* Make sure the dropdown menus have visibility and proper positioning */
+/* Make sure the dropdown menus are initially hidden */
+.LinkList {
+  display: none; /* Hidden by default */
+  position: absolute;
+  left: 100%;  /* Position the dropdown to the right of the parent */
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 10; /* Make sure it's on top */
+}
 
+.LinkList_one {
+  display: none; /* Hidden by default */
+  position: absolute;
+  left: 100%; /* Position the dropdown to the right of the parent (Shirts) */
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 10; /* Make sure it's on top */
+}
+
+/* When the Shop dropdown is open, show the dropdown */
+.LinkList.active {
+  display: block; /* Show the dropdown */
+}
+
+/* When the Shirts dropdown is open, show the nested dropdown */
+.LinkList_one.active {
+  display: block; /* Show the nested dropdown */
+}
+
+
+/* practise */
 .side_navBar .navbar_menu .navbar_list,
 .side_navBar .navbar_menu .LinkList,
 .side_navBar .navbar_menu .Link_content_inner,
