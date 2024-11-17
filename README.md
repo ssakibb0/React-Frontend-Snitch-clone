@@ -28,5 +28,10 @@ to see working project demo download the file or pull request
 <img width="953" alt="image" src="https://github.com/user-attachments/assets/4c24ddb3-c0d0-4e34-bf47-600ba679cad1">
 
 
+### Mobile View
+<img width="101" alt="image" src="https://github.com/user-attachments/assets/a38199df-63e7-46b9-a06d-538219d8d5bf">
+
+
+
 
 
