@@ -28,7 +28,7 @@ const BrandAmbassador = () => {
       initial="hidden"
       animate={controls}
       variants={animationVariants}
-      transition={{ duration: 4.5 }}
+      transition={{ duration: 2 }}
     >
       <div className="page_width">
         <div className="backgourn-wrapper">

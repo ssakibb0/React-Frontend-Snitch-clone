@@ -1345,3 +1345,10 @@
     left: -130%;
   }
 }
+
+@media (max-width: 568px) {
+  .nav_flex_item .menu_bar i {
+      font-size: 1.5rem;
+      margin-right: 0px;
+  }
+}

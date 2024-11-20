@@ -367,6 +367,16 @@ a {
   height: auto;
 } */
 
+/* copilot for header small size started */
+.small-screen-img {
+  /* display: block; Show images specifically for small screens */
+  /* width: 100%; */
+  /* height: 100vh; Full height of the viewport */
+  object-fit: cover;
+  object-position: center;
+}
+/* ended */
+
 .background .back1img img {
   width: 100%;
   height: 100%;
@@ -828,6 +838,31 @@ a {
 }
 
 /* threed section start */
+
+/* copilot for responsive imag started */
+/* working fine... */
+/* General style for images to make them responsive */
+.responsive-image {
+  width: 100%; /* Ensure image takes the full width */
+  height: 100%; /* Ensure image takes the full height */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  object-position: center; /* Center the image */
+}
+
+/* Specific adjustments for small screens */
+@media (max-width: 768px) {
+  .responsive-image {
+    /* height: 100vh; Adjust height to fill the viewport */
+    object-fit: cover; /* Ensure aspect ratio remains intact */
+    object-position: center; /* Center the image */
+  }
+}
+
+/* Wrapper styles for the Swiper container */
+/* .swiper-slide img {
+  display: block; /* Ensure images are displayed correctly */
+/* }  */
+/* ended */
 
 .pay_back_image {
   padding: 20px 0;
@@ -2467,6 +2502,61 @@ video {
     width: 100%;
     height: 100vh;
   }
+  /* practise for copilot started */
+/* General styles for header images and videos */
+.showimge, .videohide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.showimge1 {
+  display: none; /* Hidden by default */
+}
+
+/* Specific styles for small screens */
+@media (max-width: 768px) {
+  .showimge {
+    display: none; /* Hide the larger image on small screens */
+  }
+
+  .showimge1 {
+    display: block; /* Show the smaller image */
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .videohide {
+    display: block; /* Ensure video is displayed correctly */
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* Flexbox container for the Swiper slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensures proper height scaling */
+}
+
+/* Wrapper styles */
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure the background slider covers the viewport */
+}
+
+
+
+  /* ended copilot */
 
   /* four section start */
 
@@ -2733,4 +2823,11 @@ video {
   /* .Search_section .Search_menu .search_bar_flex .search_bar input {
     width: 80%;
   } */
+}
+
+@media (max-width: 568px) {
+  .nav_flex_item .menu_bar i {
+      font-size: 1.5rem;
+      margin-right: 0px;
+  }
 }
