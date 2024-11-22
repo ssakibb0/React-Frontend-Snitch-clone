@@ -127,10 +127,15 @@ a {
   }
 
   /* Hide the sticky bottom bar in larger screen sizes */
-  @media (min-width: 769px) {
-    .sticky-bottom-nav {
-      display: none;
-    }
+ 
+
+}
+@media (min-width: 769px) {
+  .sticky-bottom-nav {
+    display: none; /* Hides the bottom nav on large screens */
+  }
+  .sticky-icons {
+    display: none; /* Hides the icons on large screens */
   }
 }
 
@@ -370,10 +375,11 @@ a {
 /* copilot for header small size started */
 .small-screen-img {
   /* display: block; Show images specifically for small screens */
-  /* width: 100%; */
+  width: 100%;
+  height: 100vh;
   /* height: 100vh; Full height of the viewport */
-  object-fit: cover;
-  object-position: center;
+  /* object-fit: cover; */
+  object-position: left;
 }
 /* ended */
 
